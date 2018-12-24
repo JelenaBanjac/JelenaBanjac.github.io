@@ -28,16 +28,85 @@
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/png" href="images/jb-favicon.ico"/>
-		
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120893520-1"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		  gtag('config', 'UA-120893520-1');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-120893520-1');
 		</script>
-		
+
+		<!-- Cookies Policy -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+		<script>
+            function onInitialise(status) {
+				console.log(status);
+                console.log("onInit...");
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+
+                if (type === 'opt-out' && !didConsent) {
+                    // disable cookies
+                    window['ga-disable-UA-120893520-1'] = true;
+                }
+            }
+
+            function onStatusChange(status, chosenBefore) {
+                console.log("onStatusChange...");
+                console.log(status, chosenBefore);
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type === 'opt-out' && !didConsent) {
+                    // disable cookies
+                    window['ga-disable-UA-120893520-1'] = true;
+                }
+            }
+
+            function onRevokeChoice() {
+                console.log("onRevokeChoice...");
+                var type = this.options.type;
+                if (type === 'opt-out') {
+                    // enable cookies
+                    window['ga-disable-UA-120893520-1'] = false;
+                }
+            }
+
+			window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+				"palette": {
+					"popup": {
+						"background": "#000"
+					},
+					"button": {
+						"background": "#f1d600"
+					}
+				},
+				"theme": "classic",
+				"position": "top",
+				"type": "opt-out",
+				"content": {
+					"message": "This website uses cookies to ensure you get the best experience on this website.",
+					"dismiss": "Got it!",
+					"deny": "Decline",
+					"link": "Learn more",
+					"href": 'http://cookiesandyou.com',
+					"close": '&#x274c;',
+					"policy": 'Cookie Policy',
+					"target": '_blank',
+				},
+				"onInitialise": onInitialise,
+				"onStatusChange": onStatusChange,
+				"onRevokeChoice": onRevokeChoice
+
+			})});
+
+		</script>
+
+
+
 	</head>
 	
 	<body>
