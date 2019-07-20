@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta name="yandex-verification" content="fcb43c549e96d398" />
-		<meta name="description" 							 content="Welcome to my page! I am a student playing with data at the moment.">
+		<meta name="description" 							 content="Welcome to my page! My name is Jelena Banjac and I am a student playing with data at the moment.">
 		<meta name="viewport" 								 content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
 		<meta name="keywords" 								 content="jelena, banjac, jelena banjac, novi sad, ftn, epfl">
 		<meta name="google-site-verification"  content="6esuaFJ0gCplXQhSOn62fLpSxSSpqfEC4nmqAsxTGYY" />
@@ -11,7 +11,7 @@
 		<meta property="og:type"               content="portfolio" />
 		<meta property="og:title"              content="Jelena Banjac | Student of Data Science" />
 		<meta property="og:site_name" 				 content="Jelena Banjac" />
-		<meta property="og:description"        content="Welcome to my page! I am a student playing with data at the moment." />
+		<meta property="og:description"        content="Welcome to my page! My name is Jelena Banjac and I am a student playing with data at the moment." />
 		<meta property="og:image"              content="images/jelenabanjac_animation.gif" />
 
 		<title>Jelena Banjac | Student of Data Science</title>
@@ -315,6 +315,60 @@
 					<div class="center col-lg-6 col-md-6">
 						<div class="bs-component">
 							<div class="card mb-3">
+								<h3 class="card-header alert-danger">Brain Segmentation</h3>
+								<div class="card-body">
+								<h6 class="card-subtitle text-muted">Semester project</h6>
+								</div>
+								<div id="carouselBrainSegmentation" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselBrainSegmentation" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselBrainSegmentation" data-slide-to="1"></li>
+										<li data-target="#carouselBrainSegmentation" data-slide-to="2"></li>
+										<li data-target="#carouselBrainSegmentation" data-slide-to="3"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block" style="height: 300px; width: 100%; display: block;" src="images/brain_1.png" alt="Card image">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block" style="height: 300px; width: 100%; display: block;" src="images/brain_2.png" alt="Card image">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block" style="height: 300px; width: 100%; display: block;" src="images/brain_3.png" alt="Card image">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block" style="height: 300px; width: 100%; display: block;" src="images/brain_4.png" alt="Card image">
+										</div>
+										
+									</div>
+									<a class="carousel-control-prev" href="#carouselBrainSegmentation" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselBrainSegmentation" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<div class="card-body">
+								<p class="card-text">Developing software tools for handling magnetically collected ultra-thin sections of brain tissue in a large image to determine section's coordinates. In order to predict these coordinates, the goal was to use state-of-art object instance segmentation framework called Masked Region-based Convolutional Neural Network (Masked R-CNN) on the dataset containing sections of brain tissue in the light microscopy images. The predicted coordinates of the sections will later  be used for automated image acquisition in high resolution electron microscope. 
+								<br />– Supervisors: Thomas Templier (CIME), Martin Jaggi (MLO)</p>
+								</div>
+								
+								<div class="card-body">
+								<a href="files/Semester_Project.pdf" target="_blank" class="card-link">Report</a>
+								</div>
+								<div class="card-footer text-muted">
+								2019
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="center col-lg-6 col-md-6">
+						<div class="bs-component">
+							<div class="card mb-3">
 							    <h3 class="card-header alert-success">Developing Expert Tools for the LHC</h3>
 							    <div class="card-body">
 								    <h6 class="card-subtitle text-muted">CERN Technical Student Project</h6>
@@ -368,14 +422,18 @@
 						</div>
 					</div>
 					
+					
+				</div>
+				
+				<div class="row">
 					<div class="center col-lg-6 col-md-6">
 						<div class="bs-component">
 							<div class="card mb-3">
-							  <h3 class="card-header alert-info">Movie Recommendation System Simulation</h3>
-							  <div class="card-body">
+								<h3 class="card-header alert-info">Movie Recommendation System Simulation</h3>
+								<div class="card-body">
 								<h6 class="card-subtitle text-muted">Machine Learning course project</h6>
-							  </div>
-							  <div id="carouselMovieRecommendation" class="carousel slide" data-ride="carousel">
+								</div>
+								<div id="carouselMovieRecommendation" class="carousel slide" data-ride="carousel">
 									<ol class="carousel-indicators">
 										<li data-target="#carouselMovieRecommendation" data-slide-to="0" class="active"></li>
 										<li data-target="#carouselMovieRecommendation" data-slide-to="1"></li>
@@ -404,25 +462,23 @@
 										<span class="sr-only">Next</span>
 									</a>
 								</div>
-							  <div class="card-body">
+								<div class="card-body">
 								<p class="card-text">The simulation of recommendation system for recommending movies to users, and predicting ratings users could give to movies they have not rated yet. Training models with Item-Based and User-Based K nearest neighbours which belong to Collaborative filtering methods. 
 								<br />– Supervisor: Vuk Malbasa</p>
-							  </div>
-							  
-							  <div class="card-body">
+								</div>
+								
+								<div class="card-body">
 								<a href="https://gitlab.com/jelena-b94/Movie_Recommendation_System" target="_blank" class="card-link">Code</a>
 								<a href="https://gitlab.com/jelena-b94/Movie_Recommendation_System/blob/master/README.md" target="_blank" class="card-link">Report</a>
-							  </div>
-							  <div class="card-footer text-muted">
+								</div>
+								<div class="card-footer text-muted">
 								2017
-							  </div>
+								</div>
 							</div>
 							
 						</div>
 					</div>
-				</div>
-				
-				<div class="row">	
+					
 					<div class="center col-lg-6 col-md-6">
 						<div class="bs-component">
 							<div class="card mb-3">
