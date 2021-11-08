@@ -4,7 +4,7 @@
 		<meta name="yandex-verification" content="fcb43c549e96d398" />
 		<meta name="description" 							 content="Welcome to my page! My name is Jelena Banjac and I am a student playing with data at the moment.">
 		<meta name="viewport" 								 content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-		<meta name="keywords" 								 content="jelena, banjac, jelena banjac, novi sad, ftn, epfl">
+		<meta name="keywords" 								 content="jelena, banjac, jelena banjac, novi sad, ftn, epfl, data scientist">
 		<meta name="google-site-verification"  content="6esuaFJ0gCplXQhSOn62fLpSxSSpqfEC4nmqAsxTGYY" />
 
 		<meta property="og:url"                content="http://JelenaBanjac.com" />
@@ -17,7 +17,7 @@
 		<title>Jelena Banjac | Student of Data Science</title>
 		
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+		<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 		
 		<!-- jQuery library -->
@@ -29,25 +29,35 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/png" href="images/jb-favicon.ico"/>
+		<link rel="shortcut icon" type="image/png" href="images/jb-favicon.png"/>
 
 		<!-- Custom CSS-->
 		<style>
 			a {
-				color: #a497b5;
+				color: #d99f0b;
 			}
 			.table-info, .table-info>th, .table-info>td {
-				background-color: #cdc9d8;
-				color: #502c61;
+				background-color: #F9D47B;
+				color: #000000;
 			}
 			.alert-info {
-				color: #502c61;
-				background-color: #cdc9d8;
-				border-color: #e2cfec;
+				color: #000000;
+				background-color: #F9D47B;
+				border-color: #F9D47B;
 			}
 			a:hover {
-				color:#502c61;
+				color:#000000;
 			}
+			.table-custom th {
+				background: #F9D47B;
+			}
+			h3.card-header {
+				background-color: #F9D47B;
+				color: #000000;
+				font-size: medium;
+				line-height: 25px;
+			}
+
 			
 		</style>
 
@@ -99,20 +109,20 @@
 			window.addEventListener("load", function(){
 			window.cookieconsent.initialise({
 				"palette": {
-					"popup": {
-						"background": "#a497b5"
-					},
+					// "popup": {
+					// 	"background": "#ffffff"  // color
+					// },
 					"button": {
-						"background": "#502c61"
+						"background": "#F9D47B"  // color
 					}
 				},
-				"theme": "Cosmo",
+				"theme": "Lux",
 				"position": "top",
 				"type": "opt-out",
 				"content": {
 					"message": "This website is using cookies.",
 					"dismiss": "Got it!",
-					"deny": "Decline",
+					// "deny": "Decline",
 					"link": "Learn more",
 					"href": 'http://cookiesandyou.com',
 					"close": '&#x274c;',
@@ -161,7 +171,7 @@
 								</div>
 								
 								<div class="col-lg-6 col-md-6">
-									<img src="images/photo_2020-01-17_15-52-31.jpg" alt="Avatar" style="border-radius:50%;margin-top:30;display: block; margin-left: auto; margin-right: auto; " width=310px height=250px>
+									<img src="images/jelenabanjac_animation.gif" alt="Avatar" style="border-radius:50%;margin-top:15%;display: block; margin-left: auto; margin-right: auto; " width=290px height=320px>
 									<br />
 									<!-- <div class="row" style="left: 50%;display: flex;align-items: center;justify-content: center">
 										<a href="files/CV-JelenaBanjac-20181004-EN.pdf" download></a>
@@ -188,7 +198,7 @@
 						<div class="bs-component">
 							<table class="table table-hover">
 							  <thead>
-								<tr class="table-info" scope="row">
+								<tr class="table-custom" scope="row">
 								  <th scope="col">Date</th>
 								  <th scope="col">Experience</th>
 								  <th scope="col">Location</th>
@@ -197,7 +207,7 @@
 							  <tbody>
 								<tr class="table-light">
 									<th scope="row">
-									  Mar 2021 - Present
+									  Mar 2021 - Aug 2021
 									</th>
 									<td>
 									  <h6><b><a href="https://www.campusbiotech.ch/en/node/272" target="_blank">Blue Brain Project</a> Deep Learning</b></h6>
@@ -284,7 +294,7 @@
 						<div class="bs-component">
 							<table class="table table-hover">
 							  <thead>
-								<tr class="table-info" scope="row">
+								<tr class="table-custom" scope="row">
 								  <th scope="col">Date</th>
 								  <th scope="col">Degree</th>
 								  <th scope="col">Location</th>
@@ -293,7 +303,7 @@
 							  <tbody>
 									<tr class="table-light">
 										<th scope="row">
-										September 2018 - Present
+										Sep 2018 - Aug 2021
 										</th>
 										<td>
 										<h6><b>MSc degree, <a href="https://epfl.ch/" target="_blank">Swiss Federal Institute of Technology (EPFL) </a></b></h6>
@@ -304,7 +314,7 @@
 									</tr>
 									<tr class="table-light">
 										<th scope="row">
-										June 2013 - October 2017
+										Jun 2013 - Oct 2017
 										</th>
 										<td>
 										<h6><b>BSc degree, <a href="http://www.ftn.uns.ac.rs/n1386094394/faculty-of-technical-sciences" target="_blank">Faculty of Technical Sciences, University of Novi Sad </a></b></h6>
@@ -316,7 +326,7 @@
 									
 									<tr class="table-light">
 										<th scope="row">
-										June 2009 - June 2013
+										Jun 2009 - Jun 2013
 										</th>
 										<td>
 											<h6><b><a href="https://www.mg.edu.rs/en/" target="_blank">Mathematical Grammar School</a></b></h6>
@@ -346,13 +356,21 @@
 				</div>
 				<div class="bs-component">
 					<div class="list-group">
+					  <a href="https://arxiv.org/abs/2104.06237" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Learning to recover orientations from projections in single-particle cryo-EM</h5>
+							<small>April 10, 2021</small>
+						</div>
+						<p class="mb-1"></p>
+						<!-- <small>Bachelor Thesis</small> -->
+					  </a>
 					  <a href="https://cds.cern.ch/record/2289522" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
 						<div class="d-flex w-100 justify-content-between">
 						  <h5 class="mb-1">Developing Expert Tools for the LHC</h5>
 						  <small>October 10, 2017</small>
 						</div>
 						<p class="mb-1"></p>
-						<small>Bachelor Thesis</small>
+						<!-- <small>Bachelor Thesis</small> -->
 					  </a>
 					  <a href="https://zenodo.org/record/159419" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
 						<div class="d-flex w-100 justify-content-between">
@@ -360,7 +378,7 @@
 						  <small>October 5, 2016</small>
 						</div>
 						<p class="mb-1"></p>
-						<small>CERN Openlab Student Report</small>
+						<!-- <small>CERN Openlab Student Report</small> -->
 					  </a>
 					</div>
 				</div>	
@@ -422,8 +440,8 @@
 								<div class="card-body">
 								<p class="card-text">Single-particle cryo-electron microscopy (cryo-EM) is a technology that allows the observation and the high-resolution 3D structure determination of biomolecules. In this project, the goal is to estimate the angles at which we imaged the 2D projections from a given 3D protein (cf illustration bellow). We developed deep learning models to estimate the angles from learned pairwise projection distances. We designed a two-step method: 1) distance estimation using a Siamese neural network to learn the distance between pairs of projections, and 2) angle recovery that includes a minimization scheme in order to estimate the angles at which each projection was taken. The current results obtained are discussed depending on different combination of approaches used andexperimental conditions.
 									<br/><br/>
-								– Supervisors: <a href="https://people.epfl.ch/laurene.donati?lang=en">Laurène Donati</a> (BIG, EPFL), <a href="https://deff.ch/">Michaël Defferrard</a> (LTS2, EPFL) <br/>
-								– Professor: <a href="http://bigwww.epfl.ch/unser/">Michaël Unser</a> (BIG, EPFL)</p>
+								– Supervisors: <a href="https://people.epfl.ch/laurene.donati?lang=en" target="_blank">Laurène Donati</a> <a href="http://bigwww.epfl.ch/" target="_blank">(BIG, EPFL)</a>, <a href="https://deff.ch/" target="_blank">Michaël Defferrard</a> <a href="https://lts2.epfl.ch/" target="_blank">(LTS2, EPFL)</a> <br/>
+								– Professor: <a href="http://bigwww.epfl.ch/unser/" target="_blank">Michaël Unser</a> <a href="http://bigwww.epfl.ch/" target="_blank">(BIG, EPFL)</a></p>
 								
 								</div>
 								
@@ -484,7 +502,7 @@
 								<div class="card-body">
 									<p class="card-text">Most recommendation algorithms process the preferences of each user, and potentially those of other similar users, to predict other movies they might like. However, watching movies is often a social activity shared by multiple actors, such as a group of friends. The social dimension of watching movies contradicts common approaches that strive to satisfy one user at a time. In this project, we analyse different implementations of a movie recommender system that aims to maximize the collective satisfaction of a group of users. Using the combination of Movielens and IMDb datasets, we simulate the group of friends to train our recommender models. The recommender models implemented and discussed include the following types of networks: Neural Collaborative Filtering (NCF), Neural Graph Collaborative Filtering (NGCF), Siamese Neural Network (SNN) and LightFM models. The obtained results are compared. <br /> <br /> 
 										– Teammates: Can Yilmaz Altinigne, Sofia Kypraiou, Panagiotis Sioulas <br/>
-										– Supervisors: <a href="https://github.com/mdeff/ntds_2019#team">TAs</a>.
+										– Supervisors: <a href="https://github.com/mdeff/ntds_2019#team">TAs</a>
 									</p>
 								</div>
 							  
@@ -672,7 +690,7 @@
 									<p class="card-text">Comic books are intended to help many young people experience the first connection with the magical world of books and cinema. As such they have a profound impact on the way the mind, judgment and future preferences of a child develop during their coming of age. At the same time, comic books represent a way to better understand the social, economic and political reality they were created in. While doing this project, we would like to see how comic books were used over time to show opinions and imagination of their creators and we hope our visualization would help in the discussion of the reasons some characters were represented in a certain manner. The main objective would be to create a sequence of the way the representation of good and evil has shifted across time, but also of the ways the culture of diversity became more present in the entertainment industry.
 										<br/><br/>
 										– Teammates: Jelena Malic, Sofia Kypraiou<br/>
-										– Professor: <a href="https://www.kirellbenzi.com/">Kirell Benzi</a>.
+										– Professor: <a href="https://www.kirellbenzi.com/">Kirell Benzi</a>
 									</p>
 								</div>
 							  
@@ -736,8 +754,8 @@
 								<div class="card-body">
 								<p class="card-text">Developing software tools for handling magnetically collected ultra-thin sections of brain tissue in a large image to determine section's coordinates. In order to predict these coordinates, the goal was to use state-of-art object instance segmentation framework called Masked Region-based Convolutional Neural Network (Masked R-CNN) on the dataset containing sections of brain tissue in the light microscopy images. The predicted coordinates of the sections will later  be used for automated image acquisition in high resolution electron microscope. 
 									<br/><br/>
-									– Supervisor: <a href="https://people.epfl.ch/thomas.templier?lang=en">Thomas Templier</a> (CIME, EPFL) <br/>
-									– Professor: <a href="https://people.epfl.ch/martin.jaggi">Martin Jaggi</a> (MLO, EPFL)
+									– Supervisor: <a href="https://people.epfl.ch/thomas.templier?lang=en">Thomas Templier</a> <a href="https://www.epfl.ch/research/facilities/cime/">(CIME, EPFL)</a> <br/>
+									– Professor: <a href="https://people.epfl.ch/martin.jaggi">Martin Jaggi</a> <a href="https://www.epfl.ch/labs/mlo/">(MLO, EPFL)</a>
 								</p>
 								</div>
 								
@@ -795,8 +813,8 @@
 								<div class="card-body">
 									<p class="card-text">Developing software tools in Python for automated, precision setting-up of low-power level radio frequency (LLRF) loops, which will help expert users to have better control and faster setting-up of the radio-frequency (RF) system in the Large Hadron Collider (LHC) experiment. The aim was to completely redesign the software architecture, to add new features, to improve certain algorithms, and to increase the automation.
 										<br/><br/>
-										 – Supervisor: <a href="http://htimko.web.cern.ch/htimko/">Helga Timko</a> (BE-RF, CERN)<br/>
-										 – Professor: <a href="https://www.rt-rk.uns.ac.rs/?q=nastavno-osoblje/prof-dr-miroslav-popovi%C4%87">Miroslav Popovic</a> (RT-RK, FTN)</p>
+										 – Supervisor: <a href="http://htimko.web.cern.ch/htimko/" target="_blank">Helga Timko</a> <a href="https://home.cern/science/engineering/accelerating-radiofrequency-cavities" target="_blank">(BE-RF, CERN)</a><br/>
+										 – Professor: <a href="https://www.rt-rk.uns.ac.rs/?q=nastavno-osoblje/prof-dr-miroslav-popovi%C4%87" target="_blank">Miroslav Popovic</a> <a href="https://www.rt-rk.com/" target="_blank">(RT-RK, FTN)</a></p>
 										 
 								</div>
 							  
@@ -854,7 +872,7 @@
 								<div class="card-body">
 								<p class="card-text">The simulation of recommendation system for recommending movies to users, and predicting ratings users could give to movies they have not rated yet. Training models with Item-Based and User-Based K nearest neighbours which belong to Collaborative filtering methods. 
 									<br/><br/>
-								– Professor: <a href="http://www.vukmalbasa.com/">Vuk Malbasa</a> (FTN)</p>
+								– Professor: <a href="http://www.vukmalbasa.com/" target="_blank">Vuk Malbasa</a> (FTN)</p>
 								</div>
 								
 								<div class="card-body">
@@ -911,7 +929,7 @@
 							    <div class="card-body">
 								  <p class="card-text">Tested to use a sensor smoothing algorithm on an FPGA to directly reduce the noise on raw sensor data in general. Algorithm is implemented on a modern Cyclon V SOC FPGA using HDLs.
 									<br/><br/>
-								  – Supervisors: Christian Faerber (CERN), Jonathan Machen (CERN), Jean-Christophe Garnier (CERN)</p>
+								  – Supervisors: Christian Faerber <a href="https://ep-dep.web.cern.ch/organisation/lhcb" target="_blank">(EP-LBC, CERN)</a> , Jonathan Machen <a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank">(IPAG-EU, Intel)</a>, Jean-Christophe Garnier (CERN)</p>
 							    </div>
 
 							    <div class="card-body">
